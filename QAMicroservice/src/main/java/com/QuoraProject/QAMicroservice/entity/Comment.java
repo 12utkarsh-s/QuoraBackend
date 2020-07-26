@@ -8,7 +8,7 @@ import org.springframework.data.solr.core.mapping.SolrDocument;
 public class Comment {
 
     @Id
-    @Indexed
+    @Indexed(name = "id", type = "string")
     String commentID;
 
     @Indexed

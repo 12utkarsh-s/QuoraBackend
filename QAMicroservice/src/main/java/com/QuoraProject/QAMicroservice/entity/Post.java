@@ -10,7 +10,7 @@ import java.sql.Date;
 public class Post {
 
     @Id
-    @Indexed
+    @Indexed(name = "id", type = "string")
     String postID;
 
     @Indexed

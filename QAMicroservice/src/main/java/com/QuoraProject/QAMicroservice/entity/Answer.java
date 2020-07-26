@@ -8,7 +8,7 @@ import org.springframework.data.solr.core.mapping.SolrDocument;
 public class Answer {
 
     @Id
-    @Indexed
+    @Indexed(name = "id", type = "string")
     String answerID;
 
     @Indexed
